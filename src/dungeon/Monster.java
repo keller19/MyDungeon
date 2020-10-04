@@ -5,9 +5,13 @@ public abstract class Monster {
 	protected int def;
 	
 	
-	protected void atk(){}
+	protected  void atk() {};	
+	protected void def() {};
 	
-	protected void def() {}
+	
+	protected void degat() {}
+	
+	protected void protection(){}
 
 	
 }
