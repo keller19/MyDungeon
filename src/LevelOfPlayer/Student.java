@@ -1,4 +1,4 @@
-package LevelOfPlayer;
+package levelofplayer;
 
 public interface Student {
 

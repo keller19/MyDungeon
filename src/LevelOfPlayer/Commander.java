@@ -1,5 +1,5 @@
-package LevelOfPlayer;
+package levelofplayer;
 
-public class Commander {
+public interface Commander {
 
 }

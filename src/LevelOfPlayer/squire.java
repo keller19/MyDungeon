@@ -1,5 +1,5 @@
-package LevelOfPlayer;
+package levelofplayer;
 
-public interface squire {
+public interface Squire {
 
 }

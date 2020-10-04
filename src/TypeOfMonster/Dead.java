@@ -1,4 +1,4 @@
-package TypeOfMonster;
+package typeofmonster;
 
 public interface Dead {
 

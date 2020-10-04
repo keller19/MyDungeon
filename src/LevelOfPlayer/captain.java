@@ -1,5 +1,5 @@
-package LevelOfPlayer;
+package levelofplayer;
 
-public class captain {
+public interface Captain {
 
 }

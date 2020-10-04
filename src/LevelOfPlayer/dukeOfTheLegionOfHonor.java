@@ -1,5 +1,5 @@
-package LevelOfPlayer;
+package levelofplayer;
 
-public interface dukeOfTheLegionOfHonor {
+public interface DukeOfTheLegionOfHonor {
 
 }
