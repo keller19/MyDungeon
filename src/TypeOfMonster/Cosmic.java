@@ -20,11 +20,10 @@ public class Cosmic extends Monster {
 		this.life = life;
 		}
 	
-	public void StormCritical( int atk) {
+   public void StormCritical() {
 		System.out.println("CRITICAL !");
-		this.attaque = atk * 2;	
-		System.out.println("Par la puissance du big bang ! ");
 		
+		System.out.println("Par la puissance du big bang ! ");
 	}
 	
 	Cosmic titan = new Cosmic();

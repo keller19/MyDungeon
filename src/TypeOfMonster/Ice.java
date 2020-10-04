@@ -19,10 +19,9 @@ public class Ice extends Monster {
 		this.def =  def;
 	}
   
-  public void IceCritical( int atk) {
+  public void IceCritical( ) {
 		
 		System.out.println("CRITICAL !");
-		this.attaque = atk * 2;	
 		System.out.println("La veangence est un plat qui se mange froid !");
 	}
   

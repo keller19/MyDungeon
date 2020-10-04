@@ -1,6 +1,7 @@
 package typeofmonster;
 
 import dungeon.Monster;
+import dungeon.Personnage;
 
 public class Burn extends Monster {
 	
@@ -17,10 +18,39 @@ public class Burn extends Monster {
 		this.def =  def;
 	}
 	
-   public void BurnCritical( int atk) {
+   public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getLife() {
+		return life;
+	}
+
+	public void setLife(int life) {
+		this.life = life;
+	}
+
+	public String getLevel() {
+		return level;
+	}
+
+	public void setLevel(String level) {
+		this.level = level;
+	}
+
+	public static int getAttaque() {
 		
+		return attaque;
+		
+	}
+	
+public void BurnCritical() {
 		System.out.println("CRITICAL !");
-		this.attaque = atk * 2;	
+		Personnage.getLifepoint() - Burn.;
 		System.out.println("Que le feu te consume haha ");
 		
 	 }

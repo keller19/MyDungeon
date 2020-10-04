@@ -17,10 +17,9 @@ public class Storm extends Monster {
 		this.def =  def;
 		}
 	
-	public void StormCritical( int atk) {
+	public void StormCritical( ) {
 		
 		System.out.println("CRITICAL !");
-		this.attaque = atk * 2;	
 		System.out.println("Craint la puissance des cieux");
 	}
 	
