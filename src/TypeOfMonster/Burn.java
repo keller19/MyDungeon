@@ -1,4 +1,4 @@
-package typeofmonster;
+package typeOfMonster;
 
 import dungeon.Monster;
 import dungeon.Personnage;

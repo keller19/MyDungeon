@@ -1,4 +1,4 @@
-package typeofmonster;
+package typeOfMonster;
 
 import dungeon.Monster;
 
@@ -21,10 +21,6 @@ public class Dead extends Monster {
 		System.out.println("La mort te va si bien...");
 	}
 	
-	Dead chronos = new Dead();
-	Dead zombie = new Dead();
-	Dead JackSparrow = new Dead();
-	Dead ghoul = new Dead();
 
 }
 

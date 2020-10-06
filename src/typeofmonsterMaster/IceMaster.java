@@ -1,7 +1,8 @@
-package typeofmonsterMaster;
+package typeOfMonsterMaster;
 
-import typeofmonster.Ice;
+import typeOfMonster.Ice;
 
 public class IceMaster extends Ice {
+	int critical;
 
 }

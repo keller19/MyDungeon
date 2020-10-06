@@ -1,4 +1,4 @@
-package typeofmonster;
+package typeOfMonster;
 
 import dungeon.Monster;
 
@@ -23,13 +23,6 @@ public class Storm extends Monster {
 		System.out.println("Craint la puissance des cieux");
 	}
 	
-	
-	
-	
-	Storm stormLord = new Storm();
-	Storm leviathan = new Storm();
-	Storm stormOwls = new Storm();
-	Storm kraken = new Storm();
-	
+
 	
 }

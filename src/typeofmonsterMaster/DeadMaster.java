@@ -1,7 +1,8 @@
-package typeofmonsterMaster;
+package typeOfMonsterMaster;
 
-import typeofmonster.Dead;
+import typeOfMonster.Dead;
 
 public class DeadMaster extends Dead{
+	int critical;
 
 }

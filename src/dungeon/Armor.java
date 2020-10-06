@@ -1,5 +1,7 @@
 package dungeon;
 
-public class Armor {
+public abstract class Armor {
 
+	
+	
 }

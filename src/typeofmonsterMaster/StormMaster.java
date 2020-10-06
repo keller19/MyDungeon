@@ -1,9 +1,9 @@
-package typeofmonsterMaster;
+package typeOfMonsterMaster;
 
-import typeofmonster.Storm;
+import typeOfMonster.Storm;
 
 public class StormMaster extends Storm {
-
+	int critical;
 	
 	
 }

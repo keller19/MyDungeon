@@ -1,4 +1,4 @@
-package typeofmonster;
+package typeOfMonster;
 
 import dungeon.Monster;
 
@@ -19,17 +19,6 @@ public class Cosmic extends Monster {
 		this.level = level;
 		this.life = life;
 		}
-	
-   public void StormCritical() {
-		System.out.println("CRITICAL !");
-		
-		System.out.println("Par la puissance du big bang ! ");
-	}
-	
-	Cosmic titan = new Cosmic();
-	Cosmic Jupiter = new Cosmic();
-	Cosmic Uranus = new Cosmic();
-	Cosmic Univers_X = new Cosmic();
 	
 
 }

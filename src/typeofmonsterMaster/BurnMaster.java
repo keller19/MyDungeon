@@ -1,9 +1,9 @@
-package typeofmonsterMaster;
+package typeOfMonsterMaster;
 
-import typeofmonster.Burn;
+import typeOfMonster.Burn;
 
 public class BurnMaster extends Burn {
-	
+	int critical;
 	
 
 }
