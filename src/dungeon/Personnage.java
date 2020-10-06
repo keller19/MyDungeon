@@ -12,7 +12,7 @@ public class Personnage {
 	private static Armor armor;
 	private static String graduation = "Student";
 	
-	//methods
+	
 	public Personnage(){}
 	
 	
@@ -177,10 +177,4 @@ public class Personnage {
 			
 		}
 		
-
-
-
 }
-
-	
-

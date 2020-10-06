@@ -48,17 +48,6 @@ public class Burn extends Monster {
 		
 	}
 	
-public void BurnCritical() {
-		System.out.println("CRITICAL !");
-		Personnage.getLifepoint() - Burn.;
-		System.out.println("Que le feu te consume haha ");
-		
-	 }
 	
-	Burn ifrit = new Burn();
-	Burn phoenix = new Burn();
-	Burn dragon = new Burn();
-	Burn fire_Elephant = new Burn();
-		
 
 }
