@@ -4,10 +4,10 @@ import dungeon.Monster;
 
 public class Burn extends Monster {
 	
-	protected  int attaque = 20;
+	protected  int attaque = 15;
 	protected  int def = 5;
 	protected String name;
-	protected int life = 60 ;
+	protected int life = 40 ;
 	protected int level = 1 ;
 	
 	public Burn(){
@@ -21,9 +21,9 @@ public class Burn extends Monster {
 	
 	public Burn(String name, int level){
 			this.name =  name;
-			this.life = life + 30;
+			this.life = life + 15;
 			this.level = level;
-			this.attaque=  attaque + 5 ;
+			this.attaque=  attaque + 10 ;
 			this.def = def + 0 ;
 	}
 	
@@ -68,5 +68,9 @@ public class Burn extends Monster {
 		this.level = level;
 	}
 
+	
+	
+	
+	
 	
 }

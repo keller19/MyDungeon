@@ -3,10 +3,10 @@ package typeOfMonster;
 import dungeon.Monster;
 
 public class Storm extends Monster {
-	protected  int attaque = 0;
-	protected  int def = 0;
+	protected  int attaque = 20;
+	protected  int def = 5;
 	protected String name;
-	protected int life = 60 ;
+	protected int life = 30;
 	protected int level = 1 ;
 	
 	public Storm() {
@@ -20,10 +20,10 @@ public class Storm extends Monster {
 	
 	public Storm(String name, int level){
 			this.name =  name;
-			this.life = life + 30;
+			this.life = life + 15;
 			this.level = level;
-			this.attaque =  attaque + 5;
-			this.def = def + 0;
+			this.attaque =  attaque + 10;
+			this.def = def + 5;
 	}
 
 	public int getAttaque() {

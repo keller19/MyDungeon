@@ -3,8 +3,8 @@ package typeOfMonster;
 import dungeon.Monster;
 
 public class Cosmic extends Monster {
-	protected int attaque = 0;
-	protected int def = 0;
+	protected int attaque = 10;
+	protected int def = 10;
 	protected String name;
 	protected int life = 60 ;
 	protected int level = 1 ;
@@ -19,10 +19,10 @@ public class Cosmic extends Monster {
 	
 	public Cosmic(String name, int level){
 			this.name =  name;
-			this.life = life + 30;
+			this.life = life + 20;
 			this.level = level;
 			this.attaque =  attaque + 5;
-			this.def = def + 0;
+			this.def = def + 5;
 	}
 	
 	public int getAttaque() {

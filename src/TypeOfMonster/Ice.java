@@ -4,9 +4,9 @@ import dungeon.Monster;
 
 public class Ice extends Monster {
 	protected  int attaque = 0;
-	protected  int def = 0;
+	protected  int def = 20;
 	protected String name;
-	protected int life = 60 ;
+	protected int life = 90 ;
 	protected int level = 1 ;
 	
 	public Ice(){
@@ -23,7 +23,7 @@ public class Ice extends Monster {
 			this.life = life + 30;
 			this.level = level;
 			this.attaque =  attaque + 5;
-			this.def = def + 0;
+			this.def = def + 5;
 	}
 	
 	public int getAttaque() {
