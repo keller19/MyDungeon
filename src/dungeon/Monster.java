@@ -1,8 +1,8 @@
 package dungeon;
 public abstract class Monster {
 	
-	protected static int attaque;
-	protected static int def;
+	protected static int attaque = 5;
+	protected static int def = 0;
 	
 	
 	protected  void atk() {};	

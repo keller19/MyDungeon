@@ -1,24 +1,31 @@
 package typeOfMonster;
 
 import dungeon.Monster;
-import dungeon.Personnage;
 
 public class Burn extends Monster {
 	
 	String name;
-	int life;
-	String level;
+	int life = 60 ;
+	int level = 1 ;
 	
 	public Burn(){
 			
 	}
 	
-	public Burn(int atk, int def){	
-		this.attaque =  atk;
-		this.def =  def;
+	public Burn(String name){
+		this.name = name;
+		
 	}
 	
-   public String getName() {
+	public Burn(String name, int level){
+			this.name =  name;
+			this.life = life + 30;
+			this.level = level;
+			Monster.attaque =  attaque + 10;
+			Monster.def = def + 10;
+	}
+
+	public String getName() {
 		return name;
 	}
 
@@ -34,20 +41,19 @@ public class Burn extends Monster {
 		this.life = life;
 	}
 
-	public String getLevel() {
+	public int getLevel() {
 		return level;
 	}
 
-	public void setLevel(String level) {
+	public void setLevel(int level) {
 		this.level = level;
 	}
-
-	public static int getAttaque() {
-		
+	public int getAttaque() {
 		return attaque;
-		
 	}
 	
+	public void setAttaque(int attaque) {
+		Monster.attaque = attaque;
+	}
 	
-
 }

@@ -1,4 +1,4 @@
-package typeofmonsterBoss;
+package typeOfMonsterBoss;
 
 import typeOfMonsterMaster.DeadMaster;
 
