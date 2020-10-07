@@ -15,6 +15,13 @@ public class Main {
 		System.out.println(Dungeon.tableau5[3].getLevel());
 		System.out.println(Dungeon.tableau5[3].getAttaque());
 		System.out.println(Dungeon.tableau5[3].getLife());
+		System.out.println(Dungeon.tableau5[3].getDef());
+		
+		System.out.println(Dungeon.tableau[3].getName());
+		System.out.println(Dungeon.tableau[3].getLevel());
+		System.out.println(Dungeon.tableau[3].getAttaque());
+		System.out.println(Dungeon.tableau[3].getLife());
+		System.out.println(Dungeon.tableau[3].getDef());
 		
 	}
 

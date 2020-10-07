@@ -3,9 +3,11 @@ package typeOfMonster;
 import dungeon.Monster;
 
 public class Dead extends Monster {
-	String name;
-	int life = 60;
-	int level = 1 ;
+	protected  int attaque = 0;
+	protected  int def = 0;
+	protected String name;
+	protected int life = 60;
+	protected int level = 1 ;
 	
 	public Dead(){
 		
@@ -19,8 +21,8 @@ public class Dead extends Monster {
 			this.name =  name;
 			this.life = life + 30;
 			this.level = level;
-			Monster.attaque =  attaque + 10;
-			Monster.def = def + 10;
+			this.attaque =  attaque + 5;
+			this.def = def + 0;
 	}
 	
 	public String getName() {

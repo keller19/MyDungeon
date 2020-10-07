@@ -12,6 +12,8 @@ public class StormMaster extends Storm {
 
 	public StormMaster(String name, int level) {
 		super(name, level);
+		this.attaque = attaque + 10;
+		this.def = 10;
 		
 	}
 
