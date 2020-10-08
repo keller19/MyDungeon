@@ -1,14 +1,14 @@
 package typeOfMonster;
+import dungeon.*;
 
-import dungeon.Monster;
 
 public class Burn extends Monster {
 	
-	protected  int attaque = 15;
-	protected  int def = 5;
-	protected String name;
-	protected int life = 40 ;
-	protected int level = 1 ;
+	protected static int attaque = 15;
+	protected static int def = 5;
+	protected static String name;
+	protected static int life = 40 ;
+	protected static int level = 1 ;
 	
 	public Burn(){
 			
@@ -28,7 +28,7 @@ public class Burn extends Monster {
 	}
 	
 
-	public int getAttaque() {
+	public static int getAttaque() {
 		return attaque;
 	}
 
@@ -67,10 +67,6 @@ public class Burn extends Monster {
 	public void setLevel(int level) {
 		this.level = level;
 	}
-
-	
-	
-	
 	
 	
 }

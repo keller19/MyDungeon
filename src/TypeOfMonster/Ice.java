@@ -2,6 +2,7 @@ package typeOfMonster;
 
 import dungeon.Monster;
 
+
 public class Ice extends Monster {
 	protected  int attaque = 0;
 	protected  int def = 20;
@@ -65,6 +66,9 @@ public class Ice extends Monster {
 	public void setLevel(int level) {
 		this.level = level;
 	}
+
+	
+	
 
 
 }

@@ -1,16 +1,18 @@
 package dungeon;
 
-public class Personnage {
+import battle.*;
+
+public class Personnage implements FightsActions<Monster>{
 	
 	private static String name;
-	private static	int level = 0;
-	private static int  lifepoint = 50;
-	private static int  exp = 0;
-	private static int force = 0;
-	private static int def = 15;
-	private static Weapons weap;
-	private static Armor armor;
-	private static String graduation = "Student";
+	protected static	int level = 0;
+	protected static int  lifepoint = 50;
+	protected static int  exp = 0;
+	protected static int force = 0;
+	protected static int def = 15;
+	protected static Weapons weap;
+	protected static Armor armor;
+	protected static String graduation = "Student";
 	
 	
 	public Personnage(){}
@@ -174,6 +176,20 @@ public class Personnage {
 				setDef(50); 
 				setLifepoint(400);
 			}
+			
+		}
+
+
+		@Override
+		public void attack(Monster p) {
+			// TODO Auto-generated method stub
+			
+		}
+
+
+		@Override
+		public void defense(Monster p) {
+			// TODO Auto-generated method stub
 			
 		}
 		

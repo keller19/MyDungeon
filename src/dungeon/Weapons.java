@@ -12,20 +12,19 @@ public abstract class Weapons {
 		
 	}
 	
-	public Weapons(String name, int degats , int crit , int perfo) {
+	protected Weapons(String name, int degats , int crit , int perfo) {
 			this.name = name;
 			this.degats = degats;
 			this.crit = crit;
 			this.perfo = perfo; 
 			}
 			
-	public Weapons(int degats, int crit, int perfo) {
+	protected Weapons(int degats, int crit, int perfo) {
 		
 		this.degats = degats;
 		this.crit = crit;
 		this.perfo = perfo;
-		
-		
+			
 	}
 
 	public String getName() {

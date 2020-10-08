@@ -1,6 +1,8 @@
 package typeOfMonster;
 
+
 import dungeon.Monster;
+
 
 public class Dead extends Monster {
 	protected  int attaque = 5;
@@ -43,6 +45,8 @@ public class Dead extends Monster {
 	public void setLevel(int level) {
 		this.level = level;
 	}
+
+	
 	
 
 

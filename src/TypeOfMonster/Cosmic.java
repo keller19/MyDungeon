@@ -56,5 +56,6 @@ public class Cosmic extends Monster {
 		this.level = level;
 	}
 	
+	
 }
 
