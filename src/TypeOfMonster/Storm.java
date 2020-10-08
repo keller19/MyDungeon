@@ -4,71 +4,16 @@ import dungeon.Monster;
 
 
 public class Storm extends Monster {
-	protected  int attaque = 20;
-	protected  int def = 5;
-	protected String name;
-	protected int life = 30;
-	protected int level = 1 ;
-	
-	public Storm() {
-		
-	}
-	
-	public Storm(String name){
-		this.name = name;
-		
-	}
-	
-	public Storm(String name, int level){
-			this.name =  name;
-			this.life = life + 15;
-			this.level = level;
-			this.attaque =  attaque + 10;
-			this.def = def + 5;
+
+	public Storm(int attaque, int def, String name, int life, int level) {
+		super(attaque, def, name, life, level);
+		// TODO Auto-generated constructor stub
 	}
 
-	public int getAttaque() {
-		return attaque;
+	public Storm(String name) {
+		super(20, 0, name,10 , 1);
+		// TODO Auto-generated constructor stub
 	}
-
-	public void setAttaque(int attaque) {
-		this.attaque = attaque;
-	}
-
-	public int getDef() {
-		return def;
-	}
-
-	public void setDef(int def) {
-		this.def = def;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public int getLife() {
-		return life;
-	}
-
-	public void setLife(int life) {
-		this.life = life;
-	}
-
-	public int getLevel() {
-		return level;
-	}
-
-	public void setLevel(int level) {
-		this.level = level;
-	}
-
-
-
 
 	
 }
