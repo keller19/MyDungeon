@@ -11,7 +11,6 @@ public class Personnage implements FightsActions<Monster>{
 	protected static int force = 0;
 	protected static int def = 15;
 	protected static Weapons weap;
-	protected static Armor armor;
 	protected static String graduation = "Student";
 	
 	
@@ -192,7 +191,7 @@ public class Personnage implements FightsActions<Monster>{
 			System.out.println("Defense " +Personnage.getDef());
 			System.out.println("Experience " +Personnage.getExp());
 			System.out.println("Grade " + Personnage.getGraduation());
-			System.out.println("Armes " + Personnage.getWeap());
+			System.out.println("Armes " + Personnage.weap.getName());
 			
 		}
 

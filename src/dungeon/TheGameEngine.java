@@ -22,25 +22,47 @@ public class TheGameEngine {
 		do {
 			
 		System.out.println("1 ou 2");
-		choisir = in.next().charAt(0);		
+		choisir = in.nextInt();		
 		if (choisir == 1) {
 	    name.setWeap(CreateObjet.acier[0]);
 		} else if (choisir == 2) {
 		name.setWeap(CreateObjet.acier[0]);
-		} else if(choisir != 1) {
+		} else if(choisir != 1 && choisir != 2) {
 			break;
 		}
 	}while(choisir != 1 && choix !=  2);
-	name.levelUp();
-	TheGameEngine.QuestionsGame(name);
-	name.levelUp();
-	name.setExp(500);
-	name.levelUp();
-	TheGameEngine.QuestionsGame(name);
-	
 		
-	
+		System.out.println("Allez l'aventure va commencer");
+		
+		do{
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		}while(1 > 3);
 	}
+	
+	
+	
+	
 	
 	public static void QuestionsGame(Personnage name) {
 		 	 
