@@ -14,6 +14,12 @@ public class Storm extends Monster {
 		super(20, 0, name,10 , 1);
 		// TODO Auto-generated constructor stub
 	}
+	
+	public Storm(String name,int level) {
+		super(25, 5, name,15,level);
+		
+	}
+
 
 	
 }

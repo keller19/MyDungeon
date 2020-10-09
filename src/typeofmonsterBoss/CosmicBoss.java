@@ -1,28 +1,24 @@
 package typeOfMonsterBoss;
 
-import typeOfMonsterMaster.CosmicMaster;
+import typeOfMonster.Cosmic;
 
-public class CosmicBoss  extends CosmicMaster{
 
-	public CosmicBoss() {
-		super();
-		
+public class CosmicBoss  extends Cosmic{
+
+	public CosmicBoss(int attaque, int def, String name, int life, int level) {
+		super(attaque, def, name, life, level);
+		// TODO Auto-generated constructor stub
 	}
 
 	public CosmicBoss(String name, int level) {
 		super(name, level);
-		this.attaque = attaque + 20;
-		this.life = life + 90;
-		this.def = def + 20;
-		
+		// TODO Auto-generated constructor stub
 	}
 
 	public CosmicBoss(String name) {
 		super(name);
-		this.level = level + 3;
-		this.attaque = attaque + 10;
-		this.life = life + 60;
-		this.def = def + 10;
+		// TODO Auto-generated constructor stub
 	}
+
 
 }

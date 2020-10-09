@@ -3,28 +3,19 @@ package typeOfMonsterMaster;
 import typeOfMonster.Dead;
 
 public class DeadMaster extends Dead{
+
+	public DeadMaster(int attaque, int def, String name, int life, int level) {
+		super(attaque, def, name, life, level);
 	
-	public DeadMaster() {
-		super();
-		
 	}
 
 	public DeadMaster(String name, int level) {
-		super(name, level);
-		this.attaque = attaque + 10;
-		this.life = life + 60;
-		this.def = def + 10;
-		
+		super(15, 20, name,40,level);
 	}
 
 	public DeadMaster(String name) {
-		super(name);
-		this.level = level + 2;
-		this.life =  life + 60;
-		this.attaque = attaque + 5;
-		this.def = def + 5;
+		super(10,15, name,35, 2);
 	}
-
-
+	
 
 }

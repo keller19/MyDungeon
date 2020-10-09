@@ -1,29 +1,25 @@
 package typeOfMonsterBoss;
 
-import typeOfMonsterMaster.IceMaster;
+import typeOfMonster.Ice;
 
-public class IceBoss extends IceMaster {
 
-	public IceBoss() {
-		super();
-		
+public class IceBoss extends Ice{
+
+	public IceBoss(int attaque, int def, String name, int life, int level) {
+		super(attaque, def, name, life, level);
+		// TODO Auto-generated constructor stub
 	}
 
 	public IceBoss(String name, int level) {
 		super(name, level);
-		this.attaque = attaque + 20;
-		this.life = life + 90;
-		this.def = def + 20;
-		
+		// TODO Auto-generated constructor stub
 	}
 
 	public IceBoss(String name) {
 		super(name);
-		this.level = level + 3;
-		this.attaque = attaque + 10;
-		this.life = life + 60;
-		this.def = def + 10;
-		
+		// TODO Auto-generated constructor stub
 	}
+
+
 
 }

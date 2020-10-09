@@ -11,10 +11,14 @@ public class Ice extends Monster {
 	}
 
 	public Ice(String name) {
-		super(0, 15,name, 35,1);
+		super(0, 15,name, 35,0);
 		// TODO Auto-generated constructor stub
 	}
 
+	public Ice(String name,int level) {
+		super(5, 20, name,40,level);
+		
+	}
 
 
 }

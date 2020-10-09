@@ -1,28 +1,24 @@
 package typeOfMonsterBoss;
 
-import typeOfMonsterMaster.StormMaster;
+import typeOfMonster.Storm;
 
-public class StormBoss extends StormMaster {
+public class StormBoss extends Storm {
 
-	public StormBoss() {
-		super();
-		
+	public StormBoss(int attaque, int def, String name, int life, int level) {
+		super(attaque, def, name, life, level);
+		// TODO Auto-generated constructor stub
 	}
 
 	public StormBoss(String name, int level) {
 		super(name, level);
-		this.attaque = attaque + 25;
-		this.life = life + 100;
-		this.def = def + 20;
-		
+		// TODO Auto-generated constructor stub
 	}
 
 	public StormBoss(String name) {
 		super(name);
-		this.level = level + 3;
-		this.attaque = attaque + 25;
-		this.life = life + 90;
-		this.def = def + 20;
+		// TODO Auto-generated constructor stub
 	}
+
+	
 
 }

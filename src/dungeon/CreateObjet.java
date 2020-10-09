@@ -31,6 +31,6 @@ public class CreateObjet {
      public static Fusil[] metal = new Fusil[] {new Fusil("Lance flamme", 15, 15, 5),new Fusil("Pompe chasseur de démon ", 20 , 50, 5),new Fusil("Fusil aspire âme", 30, 50 , 10),new Fusil("Fusil empoisonné  ", 35, 55, 15),new Fusil("AK47 du Rider", 75, 40, 15)};
      public static Sword[] acier = new Sword[] { new Sword("Lame du prince gobelins", 20, 50, 15), new Sword("Epée du chevalier errant", 30, 60, 15), new Sword("Escalibur", 50, 75, 30) ,  new Sword("Epée des lumiéres ", 65, 60, 45)} ;
     
-     // differentes race du personnage 
-     public static Race[] race = new Race[] {new Race("Divin", 75, 30, 30 ), new Race("Protecteur", 10, 30, 50), new Race("Magicien", 15, 30, 45), new Race("Moldu", 10, 10, 10 ), new Race("Cryptonien", 50 , 50 , 50 ) } ;  
+    
+     
 }

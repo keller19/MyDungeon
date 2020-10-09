@@ -22,6 +22,12 @@ public class Personnage implements FightsActions<Monster>{
 		this.name = name;
 	}
 	
+	public Personnage(Weapons weap) {
+		
+		this.weap = weap;
+		
+	}
+	
 	
 	public Personnage(String name, int level, int lifepoint, int exp, int force,int def, Weapons weap, String graduation){
 		
@@ -37,7 +43,7 @@ public class Personnage implements FightsActions<Monster>{
 	}
 	
 	
-	public String getName() {
+	public static String getName() {
 		return name;
 	}
 
@@ -176,6 +182,17 @@ public class Personnage implements FightsActions<Monster>{
 				setDef(50); 
 				setLifepoint(400);
 			}
+			
+		}
+		
+		public void showStats() {
+			System.out.println("Nom du joueur " +Personnage.getName());
+			System.out.println("Niveau " + Personnage.getLevel());
+			System.out.println("Force " + Personnage.getForce());
+			System.out.println("Defense " +Personnage.getDef());
+			System.out.println("Experience " +Personnage.getExp());
+			System.out.println("Grade " + Personnage.getGraduation());
+			System.out.println("Armes " + Personnage.getWeap());
 			
 		}
 

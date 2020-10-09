@@ -2,30 +2,20 @@ package typeOfMonsterMaster;
 
 import typeOfMonster.Cosmic;
 public class CosmicMaster extends Cosmic{
-	
-	public CosmicMaster() {
-		super();
-		
+
+	public CosmicMaster(int attaque, int def, String name, int life, int level) {
+		super(attaque, def, name, life, level);
 	}
 
-	
 	public CosmicMaster(String name, int level) {
-		super(name, level);
-		this.attaque = attaque + 10;
-		this.life = life + 40;
-		this.def = def + 10;
-		
+		super(30, 25, name, 40, level);
+
 	}
 
-	
 	public CosmicMaster(String name) {
-		super(name);
-		this.level = level + 2;
-		this.life =  life + 30;
-		this.attaque = attaque + 5;
-		this.def = def + 5;
+		super(25, 20, name, 35, 2);
 	}
-
+	
 
 
 }

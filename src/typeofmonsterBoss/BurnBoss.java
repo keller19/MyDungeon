@@ -1,26 +1,23 @@
 package typeOfMonsterBoss;
 
-import typeOfMonsterMaster.BurnMaster;
-public class BurnBoss  extends BurnMaster {
+import typeOfMonster.Burn;
 
-	public BurnBoss() {
-		super();
+public class BurnBoss extends Burn {
+
+	public BurnBoss(int attaque, int def, String name, int life, int level) {
+		super(attaque, def, name, life, level);
 		
 	}
 
 	public BurnBoss(String name, int level) {
 		super(name, level);
-		this.attaque = attaque + 20;
-		this.life = life + 90;
-		this.def = def + 20;
+		
 	}
 
 	public BurnBoss(String name) {
 		super(name);
-		this.level = level + 3;
-		this.attaque = attaque + 10;
-		this.life = life + 60;
-		this.def = def + 10;
+		
 	}
+	
 
 }

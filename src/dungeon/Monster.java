@@ -8,7 +8,7 @@ public class Monster implements FightsActions<Personnage>{
 	protected  int def = 5;
 	protected  String name;
 	protected  int life = 20;
-	protected  int level = 1 ;
+	protected  int level = 0 ;
 
 	protected Monster(String name) {
 		
