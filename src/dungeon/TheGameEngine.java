@@ -13,7 +13,9 @@ public class TheGameEngine {
 	public static void Game(Personnage name){
 		
 		System.out.println("Bienvenue " + name.getName());
+		name.levelUp();
 		TheGameEngine.QuestionsGame(name);
+		name.levelUp();
 		System.out.println("Les combats vont être rude choisissez une arme \n"
 				+ "1. Lame du prince gobelins\n"
 				+ "2. Lance flamme");
@@ -22,16 +24,18 @@ public class TheGameEngine {
 		System.out.println("1 ou 2");
 		choisir = in.next().charAt(0);		
 		if (choisir == 1) {
-		name.setWeap(CreateObjet.metal[0]);
+	    name.setWeap(CreateObjet.acier[0]);
 		} else if (choisir == 2) {
 		name.setWeap(CreateObjet.acier[0]);
 		} else if(choisir != 1) {
 			break;
 		}
 	}while(choisir != 1 && choix !=  2);
-	
+	name.levelUp();
 	TheGameEngine.QuestionsGame(name);
+	name.levelUp();
 	name.setExp(500);
+	name.levelUp();
 	TheGameEngine.QuestionsGame(name);
 	
 		

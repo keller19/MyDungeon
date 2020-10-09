@@ -13,8 +13,7 @@ public class Main {
 		String joueur = in.nextLine();
 		Personnage le_gamer = new Personnage(joueur); 
 		TheGameEngine.Game(le_gamer);
-		
-		
-		
+				
   }
+	
 }
