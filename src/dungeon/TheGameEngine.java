@@ -27,14 +27,18 @@ public class TheGameEngine {
 		} else if(choisir != 1 && choisir != 2) {
 			break;
 		}
-		
-		}while(choisir != 1 && choisir !=2);
+	
+	} while(true);
 	
 	}
-		
-
 	
-
+	
+	
+	
+	
+	
+	
+	
 	
 	public void Loose(Personnage name){
 		
