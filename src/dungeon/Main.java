@@ -12,7 +12,7 @@ public class Main {
 		System.out.println("Comment vous appellez vous ?  ");
 		String joueur = in.nextLine();
 		Personnage le_gamer = new Personnage(joueur); 
-		TheGameEngine.Game(le_gamer);
+	
 				
   }
 	

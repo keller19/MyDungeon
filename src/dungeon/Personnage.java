@@ -4,14 +4,14 @@ import battle.*;
 
 public class Personnage implements FightsActions<Monster>{
 	
-	private static String name;
-	protected static	int level = 0;
-	protected static int  lifepoint = 50;
-	protected static int  exp = 0;
-	protected static int force = 0;
-	protected static int def = 15;
-	protected static Weapons weap;
-	protected static String graduation = "Student";
+	private  String name;
+	protected  int level = 0;
+	protected  int  lifepoint = 50;
+	protected  int  exp = 0;
+	protected  int force = 0;
+	protected  int def = 15;
+	protected  Weapons weap;
+	protected  String graduation = "Student";
 	
 	
 	public Personnage(){}
@@ -42,7 +42,7 @@ public class Personnage implements FightsActions<Monster>{
 	}
 	
 	
-	public static String getName() {
+	public  String getName() {
 		return name;
 	}
 
@@ -52,7 +52,7 @@ public class Personnage implements FightsActions<Monster>{
 	}
 
 
-	public static int getLevel() {
+	public  int getLevel() {
 		return level;
 	}
 
@@ -62,7 +62,7 @@ public class Personnage implements FightsActions<Monster>{
 	}
 
 
-	public static int getLifepoint() {
+	public int getLifepoint() {
 		return lifepoint;
 	}
 
@@ -72,7 +72,7 @@ public class Personnage implements FightsActions<Monster>{
 	}
 
 
-	public static int getExp() {
+	public  int getExp() {
 		return exp;
 	}
 
@@ -82,7 +82,7 @@ public class Personnage implements FightsActions<Monster>{
 	}
 
 
-	public static int getForce() {
+	public  int getForce() {
 		return force;
 	}
 
@@ -91,7 +91,7 @@ public class Personnage implements FightsActions<Monster>{
 		this.force = force;
 	}
 	
-	public static int getDef() {
+	public int getDef() {
 		return def;
 	}
 	
@@ -100,7 +100,7 @@ public class Personnage implements FightsActions<Monster>{
 	}
 
 
-	public static Weapons getWeap() {
+	public Weapons getWeap() {
 		return weap;
 	}
 
@@ -110,7 +110,7 @@ public class Personnage implements FightsActions<Monster>{
 	}
 
 
-	public  static String getGraduation() {
+	public String getGraduation() {
 		return graduation;
 	}
 
@@ -120,9 +120,9 @@ public class Personnage implements FightsActions<Monster>{
 	}
 
 
-		public void levelUp() {
+		public void levelUp(Personnage name) {
 			
-			if (Personnage.getExp() == 100 ) {
+			if (name.getExp() == 100 ) {
 				System.out.println("Felicitations vous avez atteint le niveau 1 ");
 				setLevel(1);
 				setGraduation("Ecuyer");
@@ -131,7 +131,7 @@ public class Personnage implements FightsActions<Monster>{
 				setLifepoint(100);
 			}
 			
-			if (Personnage.getExp() == 200) {
+			if (name.getExp() == 200) {
 				System.out.println("Felicitations vous avez atteint le niveau 2 ");
 				setLevel(2);
 				setGraduation("Sergent");
@@ -140,7 +140,7 @@ public class Personnage implements FightsActions<Monster>{
 				setLifepoint(150);
 			}
 			
-			if (Personnage.getExp() == 300 ) {
+			if (name.getExp() == 300 ) {
 				System.out.println("Felicitations vous avez atteint le niveau 3");
 				setLevel(3);
 				setGraduation("capitaine");
@@ -149,7 +149,7 @@ public class Personnage implements FightsActions<Monster>{
 				setLifepoint(200);
 			}
 			
-			if (Personnage.getExp() == 400 ) {
+			if (name.getExp() == 400 ) {
 				System.out.println("Felicitations vous avez atteint le niveau 4 ");
 				setLevel(4);
 				setGraduation("Chevalier");
@@ -157,7 +157,7 @@ public class Personnage implements FightsActions<Monster>{
 				setDef(35);
 				setLifepoint(250);
 			}
-			if (Personnage.getExp() == 500 ) {
+			if (name.getExp() == 500 ) {
 				System.out.println("Felicitations vous avez atteint le niveau 5 ");
 				setLevel(5);
 				setGraduation("Commandant");
@@ -165,7 +165,7 @@ public class Personnage implements FightsActions<Monster>{
 				setDef(40);
 				setLifepoint(300);
 			}
-			if (Personnage.getExp() == 600 ) {
+			if (name.getExp() == 600 ) {
 				System.out.println("Felicitations vous avez atteint le niveau 6  ");
 				setLevel(6);
 				setGraduation("Terreur draconique");
@@ -173,7 +173,7 @@ public class Personnage implements FightsActions<Monster>{
 				setDef(45);
 				setLifepoint(350);
 			}
-			if (Personnage.getExp() == 700 ) {
+			if (name.getExp() == 700 ) {
 				System.out.println("Felicitations vous avez atteint le niveau 7 ");
 				setLevel(7);
 				setGraduation("Grand duc de l'ordre cosmique");
@@ -184,24 +184,25 @@ public class Personnage implements FightsActions<Monster>{
 			
 		}
 		
-		public void showStats() {
-			System.out.println("Nom du joueur " +Personnage.getName());
-			System.out.println("Niveau " + Personnage.getLevel());
-			System.out.println("Force " + Personnage.getForce());
-			System.out.println("Defense " +Personnage.getDef());
-			System.out.println("Experience " +Personnage.getExp());
-			System.out.println("Grade " + Personnage.getGraduation());
-			System.out.println("Armes " + Personnage.weap.getName());
+		public void showStats(Personnage name) {
+			System.out.println("Nom du joueur " +name.getName());
+			System.out.println("Niveau " + name.getLevel());
+			System.out.println("Force " + name.getForce());
+			System.out.println("Defense " +name.getDef());
+			System.out.println("Experience " +name.getExp());
+			System.out.println("Grade " + name.getGraduation());
+			System.out.println("Armes " + name.weap.getName());
 			
 		}
 
-
+		
 		@Override
-		public void attack(Monster p) {
-			// TODO Auto-generated method stub
+		 public void attack(Monster p) {
+			
+		 // p.setLife(Personnage.getForce() - p.getLife());
 			
 		}
-
+ 	
 
 		@Override
 		public void defense(Monster p) {
