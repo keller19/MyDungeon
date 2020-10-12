@@ -34,12 +34,7 @@ public class TheGameEngine {
 		
 		do {
 			
-			
-			
-			
-			
-			
-			
+		// Je prevois de continuer ici le combat
 			
 		} while(true);
 	
