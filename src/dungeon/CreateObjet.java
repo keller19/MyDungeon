@@ -7,7 +7,7 @@ import weaponsBang.*;
 public class CreateObjet {
 		
       //creation des armes 
-     public static Fusil[] metal = new Fusil[] {new Fusil("Lance flamme", 15, 15, 5),new Fusil("Pompe chasseur de démon ", 20 , 50, 5),new Fusil("Fusil aspire âme", 30, 50 , 10),new Fusil("Fusil empoisonné  ", 35, 55, 15),new Fusil("AK47 du Rider", 75, 40, 15)};
+     public static Fusil[] metal = new Fusil[] {new Fusil("petite lance",0,0,0), new Fusil("Lance flamme", 15, 15, 5),new Fusil("Pompe chasseur de démon ", 20 , 50, 5),new Fusil("Fusil aspire âme", 30, 50 , 10),new Fusil("Fusil empoisonné  ", 35, 55, 15),new Fusil("AK47 du Rider", 75, 40, 15)};
      public static Sword[] acier = new Sword[] { new Sword("Lame du prince gobelins", 20, 50, 15), new Sword("Epée du chevalier errant", 30, 60, 15), new Sword("Escalibur", 50, 75, 30) ,  new Sword("Epée des lumiéres ", 65, 60, 45)} ;
     
   // Creation des monstres niveau 1-2
@@ -22,7 +22,7 @@ public class CreateObjet {
      public static  CosmicMaster[] tableau6 = new CosmicMaster[] {new CosmicMaster("asteroide grincheux"), new CosmicMaster("Venusien"), new CosmicMaster("Huissier de namek", 4), new CosmicMaster("Huissier de Kaïos", 4)};
      public static DeadMaster[] tableau7 = new DeadMaster[] {new DeadMaster("goule"),new DeadMaster("banshee"),new DeadMaster("Revenant malheureux", 4),new DeadMaster("Casper le genie", 4)};
      public static IceMaster[] tableau8 = new IceMaster[] { new IceMaster("oiseau glinçant"), new IceMaster("Banshee Hyvernal"), new IceMaster("Vouivre hyvernale", 4),new IceMaster("Dame blanche", 4)};
-     public static StormMaster[] tableau9 =  new StormMaster[] {new StormMaster("electroGang"),new StormMaster("revenant HMDI"),new StormMaster("neutron paisible", 4),new StormMaster("eclair malhonnette", 4)};
+     public static StormMaster[] tableau9 =  new StormMaster[] {new StormMaster("electroGang"),new StormMaster("revenant HDMI"),new StormMaster("neutron paisible", 4),new StormMaster("eclair malhonnette", 4)};
      
  	//Creation des monstres niveau 5-6;
       public static BurnBoss[] tableau10 =  new BurnBoss[]{ new BurnBoss("Phoenix"),new BurnBoss("Dragon du feu"), new BurnBoss("Ifrit", 6),new BurnBoss("Arés", 6) };	

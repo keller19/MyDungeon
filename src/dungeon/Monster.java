@@ -5,8 +5,8 @@ import battle.*;
 public class Monster implements FightsActions<Personnage>{
 
 	protected  int attaque = 10;
-	protected   int def = 5;
-	protected   String name;
+	protected  int def = 5;
+	protected  String name;
 	protected  int life;
 	protected  int level = 0 ;
 

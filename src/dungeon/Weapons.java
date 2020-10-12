@@ -1,6 +1,6 @@
 package dungeon;
 
-public abstract class Weapons {
+public class Weapons {
 	
 	String name;
 	int degats;
@@ -27,7 +27,7 @@ public abstract class Weapons {
 			
 	}
 
-	public String getName() {
+	public String giveName() {
 		return name;
 	}
 	public void setName(String name) {
@@ -52,5 +52,7 @@ public abstract class Weapons {
 		this.perfo = perfo;
 	}
 
+	
+	public static void showWeapons() {}
 
 }

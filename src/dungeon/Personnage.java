@@ -11,7 +11,7 @@ public class Personnage implements FightsActions<Monster>{
 	protected  int force = 0;
 	protected  int def = 15;
 	protected  Weapons weap;
-	protected  String graduation = "Student";
+	protected  String graduation = "Etudiant";
 	
 	
 	public Personnage(){}
@@ -129,51 +129,42 @@ public class Personnage implements FightsActions<Monster>{
 				setForce(15);
 				setDef(20);
 				setLifepoint(100);
-			}
-			
-			if (name.getExp() == 200) {
+			}else if (name.getExp() == 200) {
 				System.out.println("Felicitations vous avez atteint le niveau 2 ");
 				setLevel(2);
 				setGraduation("Sergent");
 				setForce(20);
 				setDef(25);
 				setLifepoint(150);
-			}
-			
-			if (name.getExp() == 300 ) {
+			}else if (name.getExp() == 300 ) {
 				System.out.println("Felicitations vous avez atteint le niveau 3");
 				setLevel(3);
 				setGraduation("capitaine");
 				setForce(25);
 				setDef(30);
 				setLifepoint(200);
-			}
-			
-			if (name.getExp() == 400 ) {
+			} else if (name.getExp() == 400 ) {
 				System.out.println("Felicitations vous avez atteint le niveau 4 ");
 				setLevel(4);
 				setGraduation("Chevalier");
 				setForce(30);
 				setDef(35);
 				setLifepoint(250);
-			}
-			if (name.getExp() == 500 ) {
+			}else if (name.getExp() == 500 ) {
 				System.out.println("Felicitations vous avez atteint le niveau 5 ");
 				setLevel(5);
 				setGraduation("Commandant");
 				setForce(35);
 				setDef(40);
 				setLifepoint(300);
-			}
-			if (name.getExp() == 600 ) {
+			} else if (name.getExp() == 600 ) {
 				System.out.println("Felicitations vous avez atteint le niveau 6  ");
 				setLevel(6);
 				setGraduation("Terreur draconique");
 				setForce(40);
 				setDef(45);
 				setLifepoint(350);
-			}
-			if (name.getExp() == 700 ) {
+			}else if (name.getExp() == 700 ) {
 				System.out.println("Felicitations vous avez atteint le niveau 7 ");
 				setLevel(7);
 				setGraduation("Grand duc de l'ordre cosmique");
@@ -185,15 +176,17 @@ public class Personnage implements FightsActions<Monster>{
 		}
 		
 		public void showStats(Personnage name) {
+			
 			System.out.println("Nom du joueur " +name.getName());
 			System.out.println("Niveau " + name.getLevel());
 			System.out.println("Force " + name.getForce());
 			System.out.println("Defense " +name.getDef());
 			System.out.println("Experience " +name.getExp());
 			System.out.println("Grade " + name.getGraduation());
-			System.out.println("Armes " + name.weap.getName());
+			System.out.println("Armes " + weap.giveName());
 			
 		}
+		
 
 		
 		@Override
