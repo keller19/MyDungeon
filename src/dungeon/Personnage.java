@@ -187,19 +187,18 @@ public class Personnage implements FightsActions<Monster>{
 			
 		}
 		
-
-		
 		@Override
 		 public void attack(Monster p) {
 			
-		 // p.setLife(Personnage.getForce() - p.getLife());
+		 p.setLife(Personnage.getForce() - p.getLife());
 			
 		}
  	
 
 		@Override
 		public void defense(Monster p) {
-			// TODO Auto-generated method stub
+			
+			p.setLife(Personnage.getForce() / 2);
 			
 		}
 		
