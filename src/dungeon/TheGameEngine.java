@@ -13,10 +13,10 @@ public class TheGameEngine {
 		System.out.println("Bienvenue " + name.getName());
 		System.out.println("Les combats vont être rude choisissez une arme \n"
 				+ "1. Lame du prince gobelins\n"
-				+ "2. Lance flamme");
-		do {
+				+ "2. Lance flamme ");
+			choisir = in.nextInt();
 			
-		System.out.println("1 ou 2");
+		do {
 		
 		if (choisir == 1) {
 	    name.setWeap(CreateObjet.acier[1]);
@@ -34,7 +34,7 @@ public class TheGameEngine {
 		
 		do {
 			
-		// Je prevois de continuer ici le combat
+			QuestionForActions(name);
 			
 		} while(true);
 	
@@ -49,9 +49,8 @@ public class TheGameEngine {
 	}
 		
 	public static void QuestionsGame(Personnage name) {
-		
 		 	 
-  do {
+		do{	  
 			System.out.println("Voulez vous voir vos stats ? (o/n)");
 			 choix = in.next().charAt(0);
 		if (choix == 'o') {
@@ -63,12 +62,10 @@ public class TheGameEngine {
 			System.out.println("Uniquement le caractére o & n !!!!!");
 		}
 		
-		}while(choix != 'o' && choix != 'n');	
-			
+		}while(choix != 'o' && choix != 'n');
 	}
 	
 	public static void QuestionForActions(Personnage name) {
-		
 
 		do{
 			int salle = 1;
@@ -79,14 +76,33 @@ public class TheGameEngine {
 		choisir = in.nextInt();		
 		if(choisir == 1) {
 			
+			Monster monstre = MonsterInvocation();
+			
 			do {
 			System.out.println("Bienvenue dans la salle numero " + salle);
-			if(name.getGraduation() == "Etudiant" && name.getGraduation() == "Ecuyer") {
-				
-				MonsterInvocation();
-				
-				
+			
+			if(name.getGraduation().equals("Etudiant") || name.getGraduation().equals("Ecuyer")) {
+				System.out.println("Attention voici le monstre " + monstre.getName());
+				System.out.println("Que le duel commence ! ");				
+				do {		
+					System.out.println("Voulez vous attaquez ou defendre \n "
+							+ "\n 1. Attaquez "
+							+ "\n 2. Defendre "); 
+					  choisir = in.nextInt();
+					if(choisir == 1) {
+					    System.out.println("Vous avez fait subir " + name.getForce());
+					    name.attack(monstre);	
+					    System.out.println("Vous avez " + name.getLifepoint() + " point de vie");
+					    System.out.println(monstre.getName()+ " a desormais " + monstre.getName() +(" point de vie"));
+					}else if (choisir == 2) {
+						System.out.println("vous avez subi " + monstre.getAttaque());
+						monstre.defense(name);	
+						System.out.println("Vous avez " + name.getLifepoint() + " point de vie");
+						 System.out.println(monstre.getName()+ " a desormais " + monstre.getName() +(" point de vie"));
+					}
+				}while(name.getLifepoint() > 0);
 			}
+			
 			}while(true);
 			
 		}else if(choisir == 2){
@@ -99,8 +115,7 @@ public class TheGameEngine {
 
 		}
 		
-		}while(choisir != 1 && choisir !=2 && choisir != 3);
-		
+		}while(choisir != 1 && choisir !=2 && choisir != 3);	
 	}
 	
 	

@@ -9,7 +9,8 @@ public class Monster implements FightsActions<Personnage>{
 	protected  String name;
 	protected  int life;
 	protected  int level = 0 ;
-
+	
+	
 	protected Monster(String name) {
 		
 	}	
@@ -74,11 +75,16 @@ public class Monster implements FightsActions<Personnage>{
 
 	@Override
 	public void attack(Personnage p) {
+		
+		 p.setLifepoint(this.getAttaque() - p.getLifepoint() );
+			
+	
 	}
 
 	@Override
 	public void defense(Personnage p) {
 		
+		p.setLifepoint(this.getAttaque() / 2);
 		
 	}
 

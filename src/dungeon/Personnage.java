@@ -8,7 +8,7 @@ public class Personnage implements FightsActions<Monster>{
 	protected  int level = 0;
 	protected  int  lifepoint = 50;
 	protected  int  exp = 0;
-	protected  int force = 0;
+	protected  int force = 10;
 	protected  int def = 15;
 	protected  Weapons weap;
 	protected  String graduation = "Etudiant";
@@ -120,6 +120,10 @@ public class Personnage implements FightsActions<Monster>{
 	}
 
 
+	
+	
+	
+	
 		public void levelUp(Personnage name) {
 			
 			if (name.getExp() == 100 ) {
@@ -190,7 +194,7 @@ public class Personnage implements FightsActions<Monster>{
 		@Override
 		 public void attack(Monster p) {
 			
-		 p.setLife(Personnage.getForce() - p.getLife());
+		 p.setLife((this.getForce() + this.weap.getDegats())- p.getLife());
 			
 		}
  	
@@ -198,7 +202,7 @@ public class Personnage implements FightsActions<Monster>{
 		@Override
 		public void defense(Monster p) {
 			
-			p.setLife(Personnage.getForce() / 2);
+			p.setLife(this.getForce() / 2);
 			
 		}
 		
